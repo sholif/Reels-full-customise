@@ -29,7 +29,7 @@ class ReelsViewer extends StatefulWidget {
 
   /// function invoke when user click on follow btn
   final Function()? onFollow;
-
+  final Function()? onFavorite;
   /// for change appbar title
   final String? appbarTitle;
 
@@ -58,7 +58,7 @@ class ReelsViewer extends StatefulWidget {
     this.onCamera,
     this.onSearch,
     this.onIndexChanged,
-    this.showProgressIndicator =true,
+    this.showProgressIndicator =true,required this.onFavorite,
   }) : super(key: key);
 
   @override
@@ -94,6 +94,7 @@ class _ReelsViewerState extends State<ReelsViewer> {
                   showVerifiedTick: widget.showVerifiedTick,
                   swiperController: controller,
                   showProgressIndicator: widget.showProgressIndicator,
+                  onFavorite: widget.onFavorite,
                 );
               },
               controller: controller,

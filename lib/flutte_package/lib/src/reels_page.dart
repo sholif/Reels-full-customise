@@ -18,6 +18,7 @@ class ReelsPage extends StatefulWidget {
   final Function(String)? onComment;
   final Function()? onClickMoreBtn;
   final Function()? onFollow;
+  final Function()? onFavorite;
   final SwiperController swiperController;
   final bool showProgressIndicator;
 
@@ -31,7 +32,7 @@ class ReelsPage extends StatefulWidget {
     this.onLike,
     this.onShare,
     this.showProgressIndicator = true,
-    required this.swiperController,  }) : super(key: key);
+    required this.swiperController,required this.onFavorite,  }) : super(key: key);
 
   @override
   State<ReelsPage> createState() => _ReelsPageState();
@@ -151,6 +152,7 @@ class _ReelsPageState extends State<ReelsPage> {
 
             ScreenOptions(
 
+              onFavorite:widget.onFavorite ,
               onClickMoreBtn: widget.onClickMoreBtn,
               onComment: widget.onComment,
               onFollow: widget.onFollow,

@@ -162,10 +162,19 @@ class ReelsPage extends StatelessWidget {
         children: [
           ReelsViewer(
 
+            onFavorite: (){
+              log(">>>>>>>>>>>>>>>>>> Favorite");
+            },
             reelsList: reelsList,
             showProgressIndicator: true,
             showVerifiedTick: false,
             showAppbar: true,
+            onCamera: (){
+              log(">>>>>>>>>>>>>>>>>> cemera");
+            },
+            onSearch: (){
+              log(">>>>>>>>>>>>>>>>>> Search");
+            },
             onShare: (p0) {
 
               log(">>>>>>>>>>>>>>>>>> SHare");

@@ -207,7 +207,7 @@ class ScreenOptions extends StatelessWidget {
     this.onFollow,
     this.onLike,
     this.onShare,
-    this.onFavorite,
+    required this.onFavorite,
 
   }) : super(key: key);
 
