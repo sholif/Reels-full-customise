@@ -4,7 +4,7 @@ import 'dart:async';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
-import 'package:new_flutter_reels/src/utils/url_checker.dart';
+import 'package:new_flutter_reels/reels/src/utils/url_checker.dart';
 import 'package:video_player/video_player.dart';
 import 'components/like_icon.dart';
 import 'components/screen_options.dart';

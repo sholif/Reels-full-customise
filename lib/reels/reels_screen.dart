@@ -1,9 +1,9 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:new_flutter_reels/src/components/cemra_screen.dart';
-import 'package:new_flutter_reels/src/models/reel_comment_model.dart';
-import 'package:new_flutter_reels/src/models/reel_model.dart';
-import 'package:new_flutter_reels/src/reels_viewer.dart';
+import 'package:new_flutter_reels/reels/src/components/cemra_screen.dart';
+import 'package:new_flutter_reels/reels/src/models/reel_comment_model.dart';
+import 'package:new_flutter_reels/reels/src/models/reel_model.dart';
+import 'package:new_flutter_reels/reels/src/reels_viewer.dart';
 class ReelsPage extends StatelessWidget {
 
 

@@ -1,9 +1,10 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:new_flutter_reels/src/components/user_profile_image.dart';
-import 'package:new_flutter_reels/src/models/reel_model.dart';
-import 'package:new_flutter_reels/src/utils/convert_numbers_to_short.dart';
+import 'package:new_flutter_reels/reels/src/components/user_profile_image.dart';
+import 'package:new_flutter_reels/reels/src/models/reel_model.dart';
+import 'package:new_flutter_reels/reels/src/utils/convert_numbers_to_short.dart';
+
 import 'comment_bottomsheet.dart';
 
 class ScreenOptions extends StatelessWidget {

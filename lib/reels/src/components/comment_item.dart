@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_reels/src/components/user_profile_image.dart';
-import 'package:new_flutter_reels/src/models/reel_comment_model.dart';
+import 'package:new_flutter_reels/reels/src/components/user_profile_image.dart';
+import 'package:new_flutter_reels/reels/src/models/reel_comment_model.dart';
 
 import '../utils/date_formatter.dart';
 
