@@ -1,17 +1,16 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
-
-import 'flutte_package/lib/reels_viewer.dart';
-
-
+import 'package:new_flutter_reels/src/components/cemra_screen.dart';
+import 'package:new_flutter_reels/src/models/reel_comment_model.dart';
+import 'package:new_flutter_reels/src/models/reel_model.dart';
+import 'package:new_flutter_reels/src/reels_viewer.dart';
 class ReelsPage extends StatelessWidget {
 
 
   final List<ReelModel> reelsList = [
     ReelModel(
       'https://videos.pexels.com/video-files/17169505/17169505-hd_1080_1920_30fps.mp4',
-      'User2',
+      'User1',
       isLiked: false,
       isFollow: true,
       isFavorite: true,
@@ -54,7 +53,7 @@ class ReelsPage extends StatelessWidget {
     ),
     ReelModel(
       'https://www.w3schools.com/html/mov_bbb.mp4',
-      'User2',
+      'User3',
       isLiked: true,
       favoriteCount: 10,
       shareCount: 10,
@@ -74,7 +73,7 @@ class ReelsPage extends StatelessWidget {
     ),
     ReelModel(
       'https://www.w3schools.com/html/mov_bbb.mp4',
-      'User2',
+      'User4',
       isLiked: true,
       likeCount: 100,
       favoriteCount: 10,
@@ -94,7 +93,7 @@ class ReelsPage extends StatelessWidget {
     ),
     ReelModel(
       'https://www.w3schools.com/html/mov_bbb.mp4',
-      'User2',
+      'User5',
       isLiked: true,
       isFavorite: true,
       likeCount: 100,
@@ -114,7 +113,7 @@ class ReelsPage extends StatelessWidget {
     ),
     ReelModel(
       'https://www.w3schools.com/html/mov_bbb.mp4',
-      'User2',
+      'User6',
       isLiked: true,
       isFavorite: false,
       likeCount: 100,
@@ -134,7 +133,7 @@ class ReelsPage extends StatelessWidget {
     ),
     ReelModel(
       'https://www.w3schools.com/html/mov_bbb.mp4',
-      'User2',
+      'User7',
       isLiked: false,
       isFavorite: true,
       likeCount: 100,
@@ -157,7 +156,7 @@ class ReelsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Reels Page')),
+      appBar: AppBar(title: Text('Reels')),
       body: Stack(
         children: [
           ReelsViewer(
@@ -170,6 +169,8 @@ class ReelsPage extends StatelessWidget {
             showVerifiedTick: false,
             showAppbar: true,
             onCamera: (){
+
+                  showCameraOptions(context);
               log(">>>>>>>>>>>>>>>>>> cemera");
             },
             onSearch: (){

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_reels/flutte_package/lib/reels_viewer.dart';
+import 'package:new_flutter_reels/src/models/reel_comment_model.dart';
 
 import 'comment_item.dart';
 

@@ -1,4 +1,4 @@
-import 'package:new_flutter_reels/flutte_package/lib/reels_viewer.dart';
+import 'package:new_flutter_reels/src/models/reel_comment_model.dart';
 
 class ReelModel {
   final String? id;

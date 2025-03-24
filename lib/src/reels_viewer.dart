@@ -1,7 +1,8 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:new_flutter_reels/flutte_package/lib/reels_viewer.dart';
-import 'package:new_flutter_reels/flutte_package/lib/src/reels_page.dart';
+import 'package:new_flutter_reels/src/reels_page.dart';
+
+import 'models/reel_model.dart';
 
 
 class ReelsViewer extends StatefulWidget {
